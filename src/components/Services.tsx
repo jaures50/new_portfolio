@@ -25,7 +25,7 @@ const Services: React.FC = () => {
     {
       title: 'Montage Vidéo ',
       icon: 'bi-camera-video',
-      description: 'Création de contenus vidéo avec canva',
+      description: '',
       highlights: ['Montage vidéo']
     }
   ];

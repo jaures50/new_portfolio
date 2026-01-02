@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error) {
@@ -130,8 +130,60 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               className="pt-8 border-t border-gray-700"
-            >
-              
+            ><div className="space-y-4">
+                {/* Carte Téléphone */}
+                <a
+                  href="tel:+2290145413233"
+                  className="group relative flex items-center gap-4 p-4 bg-gradient-to-r from-blue-600/10 to-blue-800/10 rounded-xl hover:from-blue-600/20 hover:to-blue-800/20 transition-all duration-300 border border-blue-500/20 hover:border-blue-500/40"
+                >
+                  {/* Icône */}
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+
+                  {/* Texte */}
+                  <div className="flex-1">
+                    <div className="text-sm text-blue-400 font-medium">Téléphone ( Auto ) </div>
+                    <div className="text-white text-lg font-semibold group-hover:text-blue-200 transition-colors">
+                      +229 01 45 41 32 33
+                    </div>
+                  </div>
+
+                  {/* Badge d'action */}
+                  <span className="text-sm text-blue-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Appeler →
+                  </span>
+                </a>
+
+                {/* Carte Email */}
+                <a
+                  href="mailto:jaureszogba@gmail.com"
+                  className="group relative flex items-center gap-4 p-4 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-xl hover:from-purple-600/20 hover:to-pink-600/20 transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40"
+                >
+                  {/* Icône */}
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+
+                  {/* Texte */}
+                  <div className="flex-1">
+                    <div className="text-sm text-purple-400 font-medium">Email</div>
+                    <div className="text-white text-lg font-semibold group-hover:text-purple-200 transition-colors truncate">
+                      jaureszogba@gmail.com
+                    </div>
+                  </div>
+
+                  {/* Badge d'action */}
+                  <span className="text-sm text-purple-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Écrire →
+                  </span>
+                </a>
+              </div>
+
             </motion.div>
           </motion.div>
 

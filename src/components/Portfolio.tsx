@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
     { id: 4, title: 'Carte de Visite face 1', category: 'cartes', imageUrl: "assets/img/Canva/carte_face1.png" },
     { id: 5, title: 'Sparow Parfun', category: 'logos', imageUrl: 'assets/img/Canva/logo5.jpg' },
     { id: 6, title: "Evenement COP30-1 'Ciaivertes.bj'", category: 'affiches', imageUrl: 'assets/img/Canva/affiche7.jpg' },
-    { id: 6, title: "Evenement COP30-1 'Ciaivertes.bj'", category: 'affiches', imageUrl: 'assets/img/Canva/affiche8.jpg' },
+    { id: 6, title: "Evenement COP30-2 'Ciaivertes.bj'", category: 'affiches', imageUrl: 'assets/img/Canva/affiche8.jpg' },
     { id: 6, title: 'Anif ', category: 'affiches', imageUrl: 'assets/img/Canva/affiche9.jpg' },
     { id: 6, title: 'Machine de riz, etc', category: 'affiches', imageUrl: 'assets/img/Canva/affiche10.jpg' },
     { id: 6, title: "Guide d'utilisation charbon propre 'Ciaiverts.bj'", category: 'affiches', imageUrl: 'assets/img/Canva/affiche11.jpg' },

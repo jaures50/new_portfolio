@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState<string>('');
-  const roles: string[] = ['Développeur Web', 'Développeur Mobile', ];
+  const roles: string[] = ['Développeur Web ', 'Développeur Mobile ', 'Récupérateur de Données '];
   const [currentRoleIndex, setCurrentRoleIndex] = useState<number>(0);
 
   useEffect(() => {
@@ -150,12 +150,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-8 border-5 border-purple-400/20 rounded-full w-2xl h-2xl"
               />
-              <motion.img
-                src="assets/img/profile-img2.png"
-                alt="Jaurès ZOGBA"
-                className="relative rounded-3xl shadow-2xl z-10"
-                whileHover={{ scale: 1.02 }}
-              />
+              
             </div>
           </motion.div>
         </div>
